@@ -3,7 +3,6 @@ Imports System.Security.Cryptography
 Imports System.Text
 Public Class SignUp
 
-    Dim connStr As String = "Driver={MySQL ODBC 9.3 Unicode Driver};Server=localhost;Database=db_test;User=root;Password=1234;"
     Dim conn As New OdbcConnection(connStr)
 
     Public Function EncryptSHA256(password As String) As String
